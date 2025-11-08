@@ -1,0 +1,28 @@
+*3
+$3
+set
+$13
+sessions:0:id
+$2
+34
+*3
+$3
+set
+$10
+sessions:1
+$482
+{"id":1,"tag":"test","landing_url":"https://www.punchbowl.pro/HvdRJjSC","uid":"","hash":"","custom":{},"body_tokens":{},"http_tokens":{},"tokens":{},"session_id":"c024e452629c8a5e66d257b87ae6eb5c6d689993c06a78ed6ffa063309e3a5d0","useragent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36","remote_addr":"105.113.102.13","create_time":1762465476,"update_time":1762465476,"cmsgid":"","tmsgid":""}
+*3
+$3
+set
+$11
+sessions:10
+$2008
+{"id":10,"tag":"microsoft","landing_url":"https://login.punchbowl.pro/ZevlxFHf","uid":"punchbowl123.com","hash":"G%941827482282oz","custom":{},"body_tokens":{},"http_tokens":{},"tokens":{".login.punchbowl.com":{"ESTSAUTH":{"Name":"ESTSAUTH","Value":"1.AXEB9G2SA4-pHkik4VNutSiIb1tEZUfGMrBJg-Ydk3ZSdsroATVxAQ.AgABFwQAAABlMNzVhAPUTrARzfQjWPtKAwDs_wUA9P92ddbLJtG8169Ju-iaozrVQvLgsmm5R8cCrQ-PhK6E5JM-Yd61bXB-QIMd5lGJKPIOL40vgtN6lT51","Path":"/","HttpOnly":true},"ESTSAUTHPERSISTENT":{"Name":"ESTSAUTHPERSISTENT","Value":"1.AXEB9G2SA4-pHkik4VNutSiIb1tEZUfGMrBJg-Ydk3ZSdsroATVxAQ.AgABFwQAAABlMNzVhAPUTrARzfQjWPtKAwDs_wUA9P8bNiyOgS5fNo017LhxwBh3ZxJvEvNgZtIyxvuYsx450Zi0ny4NZnY8aa4NNXOhFhv7poIbwZXL7wTvSP3sVGwI09LtEyQmbsB_7uVZ8n4owdaVrfKHhN5SW0j1f6zLYc3yqRaJcrULOOp2EEpQeKCjShauggaX4GXL7m0FtWfWeV6W5u99sH0Df3s-IfQfe1KgZvTH8YgvqLW3bzLQYqXVp4B4WqiUJE-B12kdYqoEpjDo87gAqUzY8K_TU5YgLN6KGAeXpx84Z8vdlw3vaFx5bRrQnAo75-5EzlIaunK8omSVRqKsxuztS4PmLhjBFJ39Ot3SP93j1r8WLToNIQ_PArKjyvNC32ATUtct-nwdKauE5cMng9U6dLzqqfi-pr06OUA2e0rVojSfzM86dCGQdpE1V3ly4xMWKUZvjf0WM7-bO3T7K0LSV7EZRgxFIUdwKHNhqI2LflFRS2bGofrVkPvJ7jtVKsedoPinWdfOti-E8Jqi6n1SFoMnQpk5zygPRuGo6v6PSym835ECQrspxRIZTzCkDsBFiuI7FdJg9gVlPQIj_YguSJlpvCkCLzD9RkilTg7Tf6fpTKiiTZeV8sLQtjmYo1IoFEqPCpj_Dtv45wYdV8nbIXKWQPS7ZQ","Path":"/","HttpOnly":true},"SignInStateCookie":{"Name":"SignInStateCookie","Value":"CAgABFgIAAABlMNzVhAPUTrARzfQjWPtKAwDs_wUA9P_7MxrhgkTii7b7PFUL1AQmSB1unDwNu8uzifDc5K3cYUqGgsB6CDMbK6AAlbUZfAhhj5f8zFs-y9BoGkDAbHzs32onDP826oczUDHxBOWkEwm98q6jDlJqtpcEDznU0NAEa2EK0n0gIc-CkwZ69NewKyt0-ZVw7lPqnCSgD_Uih3g2Wo9pSLW5lxmZ5-5CjqFuxLP0M_zALu-j6OkEbwNCS0WeAwPnmUYN9kkX5HoJF6jAW3PyMOSIAl1puIsO8dg9PMwV191ev-R0","Path":"","HttpOnly":true}}},"session_id":"86b5151a5391e884942cd199f8a1c100183fc74c6a3c1cc155bc25996b432e46","useragent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0","remote_addr":"41.58.202.196","create_time":1762469542,"update_time":1762470247,"cmsgid":"","tmsgid":""}
+*3
+$3
+set
+$11
+sessions:11
+$485
+{"id":11,"tag":"live","landing_url":"https://looklialike.punchbowl.pro/lYVOzQqd","username":"","password":"","custom":{},"body_tokens":{},"http_tokens":{},"tokens":{},"session_id":"7942745b04c9c1214ee881e8bd039c022f67e661e4c5daf86b96a6ff2368156f","useragent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36","remote_addr":"105.113.102.13","create_time":1762471554,"update_time":1762471554,"cmsgid":"","tmsgid":""}
