@@ -6,9 +6,9 @@ import DashboardLayout from '@/components/DashboardLayout';
 import { Copy, Upload, Mic, Zap } from 'lucide-react';
 
 export default function RedirectsPage() {
-  const [frontEndLink, setFrontEndLink] = useState('https://pixelbloom.cyou/qVOrxoTN/');
-  const [senderEmailFormat, setSenderEmailFormat] = useState('test@test.com');
-  const [linkType, setLinkType] = useState('Main Link (wildcard supported)');
+  const [frontEndLink, setFrontEndLink] = useState(' ');
+  const [senderEmailFormat, setSenderEmailFormat] = useState(' ');
+  const [linkType, setLinkType] = useState('Un-shortened');
   const [generatedUrls, setGeneratedUrls] = useState<string[]>([]);
 
   const handleGenerate = () => {
@@ -72,7 +72,7 @@ export default function RedirectsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div>
               <label htmlFor="frontEndLink" className="block text-sm font-medium text-gray-700">
-                Provide your Front-End link here:
+                Provide your link here:
               </label>
               <input
                 type="text"
@@ -106,7 +106,7 @@ export default function RedirectsPage() {
               value={linkType}
               onChange={(e) => setLinkType(e.target.value)}
             >
-              <option>Main Link (wildcard supported)</option>
+              <option>Un-shortened</option>
               {/* Add more options here if needed */}
             </select>
           </div>

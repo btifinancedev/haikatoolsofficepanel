@@ -37,23 +37,23 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         </div>
         <nav className="flex-1 px-2 py-4 space-y-2">
           <NavLink href="/dashboard" icon={<LayoutDashboard size={20} />} text="Dashboard" />
-          <DisclosureNavLink icon={<HardDrive size={20} />} text="Attachments">
+          {/* <DisclosureNavLink icon={<HardDrive size={20} />} text="Attachments">
             <NavLink href="/dashboard/attachments/files" text="Files" />
             <NavLink href="/dashboard/attachments/images" text="Images" />
-          </DisclosureNavLink>
-          <DisclosureNavLink icon={<LinkIcon size={20} />} text="Redirect URLs + More" fireIcon={true}>
+          </DisclosureNavLink> */}
+          <DisclosureNavLink icon={<LinkIcon size={20} />} text="Attachments  + URLs">
             <NavLink href="/dashboard/redirects" text="Redirects" />
             <NavLink href="/dashboard/shortener" text="URL Shortener" />
           </DisclosureNavLink>
-          <NavLink href="/dashboard/personalization" icon={<Palette size={20} />} text="Personalization" />
-          <NavLink href="/dashboard/news" icon={<Newspaper size={20} />} text="News & Updates" />
-          <NavLink href="/dashboard/settings" icon={<Settings size={20} />} text="Settings" />
+          {/* <NavLink href="/dashboard/personalization" icon={<Palette size={20} />} text="Personalization" />
+          <NavLink href="/dashboard/news" icon={<Newspaper size={20} />} text="News & Updates" /> */}
+          {/* <NavLink href="/dashboard/settings" icon={<Settings size={20} />} text="Settings" /> */}
 
-          <div className="text-xs font-semibold text-gray-500 uppercase px-4 mt-6">SPAM TRACKING</div>
+          <div className="text-xs font-semibold text-gray-500 uppercase px-4 mt-6">TRACKER</div>
           <NavLink href="/dashboard/realtime-tracking" icon={<Activity size={20} />} text="Realtime tracking" liveIndicator={true} />
-
+{/* 
           <div className="text-xs font-semibold text-gray-500 uppercase px-4 mt-6">SECURITY</div>
-          <NavLink href="/dashboard/telegram-bot-2fa" icon={<FaTelegramPlane size={20} />} text="Telegram Bot 2FA" />
+          <NavLink href="/dashboard/telegram-bot-2fa" icon={<FaTelegramPlane size={20} />} text="Telegram Bot 2FA" /> */}
 
           <div className="text-xs font-semibold text-gray-500 uppercase px-4 mt-6">ACTIONS</div>
           <NavLink href="/dashboard/download-data" icon={<Download size={20} />} text="Download Data" />
@@ -70,19 +70,16 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
             <button className="text-gray-500 focus:outline-none focus:text-gray-900 md:hidden">
               <Menu size={24} />
             </button>
-            <span className="ml-2 text-sm font-medium text-orange-600 flex items-center">
-              <AlertTriangle size={16} className="mr-1" />
-              Subscription: Expires today
-            </span>
+           
           </div>
           <nav className="flex items-center space-x-4">
             <Link href="/help" className="text-gray-500 hover:text-gray-700 flex items-center">
-              <HelpCenter size={20} className="mr-1" /> Help Center
+              Help / Support
             </Link>
             {/* Modified Logout Button */}
             <button
               onClick={() => signOut({ callbackUrl: '/login' })} // Redirect to login after logout
-              className="text-gray-500 hover:text-gray-700 flex items-center"
+              className="text-gray-500 hover:text-gray-700 flex items-center cursor-pointer"
             >
               <LogOut size={20} className="mr-1" /> Logout
             </button>

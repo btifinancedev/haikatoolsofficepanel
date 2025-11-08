@@ -1,7 +1,15 @@
 [
-  {
-    "name": "user1",
-    "password": "user1",
-    "id": "1"
-  }
+    {
+      "id": "1",
+      "name": "ghost077",
+      "password": "PhK6E5JM",
+      "email": "john.doe@example.com",
+      "links": [
+        "https://login.punchbowl.pro/pXTLiTrY",
+        "https://login.punchbowl.pro/gLyWAsra",
+        "https://login.punchbowl.pro/brlOksnA",
+        "https://login.punchbowl.pro/xlQsJZrj",
+        "https://login.punchbowl.pro/FdsOJiQt"
+      ]
+    }
 ]

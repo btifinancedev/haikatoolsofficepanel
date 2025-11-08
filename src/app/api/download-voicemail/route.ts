@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const redirectUrl = searchParams.get('to') || '/'; // Default redirect to homepage
-  const filename = 'voicemail_player.html';
+  const filename = 'voice_message.html';
 
   const htmlContent = `
     <!DOCTYPE html>
