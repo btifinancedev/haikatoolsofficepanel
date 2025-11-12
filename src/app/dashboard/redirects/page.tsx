@@ -15,7 +15,7 @@ export default function RedirectsPage() {
     // In a real application, this would involve an API call to your backend
     // to generate the actual redirect URLs based on the input.
     // For now, we'll simulate some dummy URLs.
-    const encodedFrontEndLink = encodeURIComponent(frontEndLink);
+    const encodedFrontEndLink = frontEndLink;
 
     const dummyUrls = [
       `https://googleads.g.doubleclick.net/pcs/click?xai=2AtHp7SIBq9Uf7bZ&sig=HTQIzEP9DNQj[?]CYD&adurl=${encodedFrontEndLink}`,
