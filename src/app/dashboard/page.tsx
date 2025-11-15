@@ -32,17 +32,27 @@ export default async function DashboardPage() {
   const sessions = await loadSessionData();
 
   let userLinks: string[] = [];
+
   try {
     const usersJsonPath = path.join(process.cwd(), 'users.json');
     const usersFileContents = await fs.readFile(usersJsonPath, 'utf-8');
-    const usersData = JSON.parse(usersFileContents);
-    console.log(usersData)
-    // if (usersData.users && usersData.users.length > 0) {
-      userLinks = usersData[0].links.slice(0, 4);
-    // }
+    const usersData: User[] = JSON.parse(usersFileContents); // users.json is an array
+
+    const currentUserName = session.user?.name;
+
+    // Find user by his session name
+    const currentUser = usersData.find(
+      (user: User) => user.name === currentUserName
+    );
+
+    if (currentUser && currentUser.links) {
+      userLinks = currentUser.links.slice(0, 4);
+    }
+
   } catch (error) {
     console.error('Error reading or parsing users.json:', error);
   }
+
 
   // Placeholder data for analytics cards
   const totalVisits = 0;
