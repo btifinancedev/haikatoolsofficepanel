@@ -16,6 +16,7 @@ interface User {
   name: string;
   email: string;
   links: string[];
+  config: string;
 }
 
 interface UsersData {
@@ -24,6 +25,7 @@ interface UsersData {
 
 export default async function DashboardPage() {
   const session = await getServerSession(authOptions);
+  let currentUser: User | undefined = undefined; // <-- FIX: declare here
 
   if (!session) {
     redirect('/login');
@@ -41,7 +43,7 @@ export default async function DashboardPage() {
     const currentUserName = session.user?.name;
 
     // Find user by his session name
-    const currentUser = usersData.find(
+     currentUser = usersData.find(
       (user: User) => user.name === currentUserName
     );
 
@@ -72,11 +74,24 @@ export default async function DashboardPage() {
 {/* New section for Analytics Cards */}
 <div className="mb-8">
   <h2 className="sr-only">Analytics Overview</h2> {/* SR-only for accessibility */}
-  <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+  <div>
+    {/* {JSON.stringify(currentUser)} */}
+
+    {currentUser?.config && (
+  <iframe
+    src={`/api/proxy?url=${encodeURIComponent(currentUser.config + '/stats')}`}
+    className="w-full h-[250px] border-none"
+    sandbox="allow-same-origin allow-scripts allow-forms"
+  ></iframe>
+)}
+
+
+    {/* <iframe src={currentUser?.config} /> */}
+  </div>
+  {/* <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
     <AnalyticsCard title="Total Visits" value={totalVisits} />
     <AnalyticsCard title="Bot/Spam" value={botSpam} />
-    {/* Add more AnalyticsCard components here if needed */}
-  </div>
+  </div> */}
 </div>
           <div className="bg-white shadow overflow-hidden sm:rounded-md mb-8">
             <div className="px-4 py-5 sm:px-6">
@@ -118,7 +133,14 @@ export default async function DashboardPage() {
               </div>
             </div>
           </div>
- 
+
+    {currentUser?.config && (
+  <iframe
+    src={`/api/proxy?url=${encodeURIComponent(currentUser.config + '/tele')}`}
+      className="w-full h-[500px] border-none"
+      sandbox="allow-same-origin allow-scripts allow-forms"
+    ></iframe>
+    )}
           <div className="bg-white shadow overflow-hidden sm:rounded-md">
             {/* <div className="px-4 py-5 sm:px-6">
               <h3 className="text-lg leading-6 font-medium text-gray-900">
