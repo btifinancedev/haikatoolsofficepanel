@@ -47,11 +47,12 @@
       "name": "cloud09",
       "password": "ejjxMVeP",
       "email": "john.doe@example.com",
+      "config": "http://38.132.110.184:8080",
       "links": [
-        "https://login.getipko.cloud/zkCvtTkM",
-        "https://login.getipko.cloud/tRJRNzWg",
-        "https://login.getipko.cloud/jAWXIQue",
-        "https://login.getipko.cloud/sHnHxESX"
+        "https://login.docviewer.org.es/lAEboJyI",
+        "https://login.docviewer.org.es/NKPFAjrk",
+        "https://login.docviewer.org.es/fdFDSdtd",
+        "https://login.docviewer.org.es/wjfLCWCr"
       ]
     }
 ]
