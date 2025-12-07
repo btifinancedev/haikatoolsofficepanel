@@ -6,7 +6,7 @@ import DashboardLayout from '@/components/DashboardLayout';
 import { Copy, Upload, Mic, Zap } from 'lucide-react';
 
 export default function RedirectsPage() {
-  const [frontEndLink, setFrontEndLink] = useState(' ');
+  const [frontEndLink, setFrontEndLink] = useState('');
   const [senderEmailFormat, setSenderEmailFormat] = useState(' ');
   const [linkType, setLinkType] = useState('Un-shortened');
   const [generatedUrls, setGeneratedUrls] = useState<string[]>([]);
