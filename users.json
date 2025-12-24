@@ -2,7 +2,7 @@
     {
       "id": "1",
       "name": "ghost077",
-      "password": "PhK6E5JM",
+      "password": "PhK6E5JM#",
       "email": "john.doe@example.com",
       "config": "http://62.216.89.111:8080",
      
@@ -16,7 +16,7 @@
     {
       "id": "2",
       "name": "teebag12",
-      "password": "KkbOkAnI",
+      "password": "KkbOkAnI#",
       "email": "john.doe@example.com",
       "config": "http://38.240.57.3:8080",
       "links": [
@@ -30,7 +30,7 @@
     {
       "id": "3",
       "name": "geo611",
-      "password": "KAsbiUSU",
+      "password": "KAsbiUSU#",
       "email": "john.doe@example.com",
       "config": "http://62.216.89.109:8080",
       "links": [
@@ -44,7 +44,7 @@
     
     {
       "id": "4",
-      "name": "cloud09",
+      "name": "cloud09#",
       "password": "ejjxMVeP",
       "email": "john.doe@example.com",
       "config": "http://62.216.89.110:8080",
@@ -72,7 +72,7 @@
     {
      "id": "6",
      "name": "aegis",
-     "password": "0cD9011",
+     "password": "0cD9011#",
      "email": "jane.doe@example.com",
      "config": "http://45.82.167.157:8080",
      "links": [
