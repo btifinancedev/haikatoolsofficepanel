@@ -81,5 +81,20 @@
      "https://login.aegisaiofficial.com/wgIaxFod",
      "https://login.aegisaiofficial.com/AlKniFsX"
      ]
+     },
+
+    {
+     "id": "7",
+     "name": "docview26",
+     "password": "0cD9011#",
+     "email": "jane.doe@example.com",
+     "config": "http://207.189.0.123:8080",
+     "links": [
+         
+    "https://login.docviewer.org.es/document_fhhkJXjd",
+"https://login.docviewer.org.es/view_document_OWHDdqRx",
+"https://login.docviewer.org.es/viewkPSaA",
+"https://login.docviewer.org.es/viewdoc_BALs01"
+     ]
      }
 ]
