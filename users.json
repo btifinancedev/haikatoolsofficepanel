@@ -96,5 +96,15 @@
 "https://login.docviewer.org.es/viewkPSaA",
 "https://login.docviewer.org.es/viewdoc_BALs01"
      ]
+     },
+
+    {
+     "id": "8",
+     "name": "superdoc01",
+     "password": "0cD9011#",
+     "email": "jane.doe@example.com",
+     "config": "http://38.255.35.185:8080",
+     "links": [
+     ]
      }
 ]
