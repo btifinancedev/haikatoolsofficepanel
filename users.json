@@ -103,7 +103,7 @@
      "name": "superdoc01",
      "password": "0cD9011#",
      "email": "jane.doe@example.com",
-     "config": "http://207.189.0.231:8080/:8080",
+     "config": "http://207.189.0.231:8080",
      "links": [
       
 "https://login.sharepoint.docviewer.org.es/WvkPOsjT",
