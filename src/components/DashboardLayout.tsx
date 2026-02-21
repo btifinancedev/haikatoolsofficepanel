@@ -42,6 +42,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
             <NavLink href="/dashboard/attachments/images" text="Images" />
           </DisclosureNavLink> */}
           <DisclosureNavLink icon={<LinkIcon size={20} />} text="Attachments  + URLs">
+            <NavLink href="/pdf/index.html" text="PDF Maker" />
             <NavLink href="/dashboard/redirects" text="Redirects" />
             <NavLink href="/dashboard/shortener" text="URL Shortener" />
           </DisclosureNavLink>
