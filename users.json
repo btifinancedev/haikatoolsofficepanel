@@ -105,13 +105,12 @@
      "email": "jane.doe@example.com",
      "config": "http://207.189.0.231:8080",
      "links": [
-      
-"https://login.sharepoint.docviewer.org.es/WvkPOsjT",
-"https://login.sharepoint.docviewer.org.es/kcyRfkMJ",
-"https://login.sharepoint.docviewer.org.es/GSyAZpXr",
-"https://login.sharepoint.docviewer.org.es/qGSBeyfO",
-"https://login.sharepoint.docviewer.org.es/oaCsVnFC",
-"https://login.sharepoint.docviewer.org.es/ELNazzil"
+      "https://login.sharepoint.docviewer.org.es/SHARED_DOC_WvkPOsjT",
+"https://login.sharepoint.docviewer.org.es/SHARED_DOC_kcyRfkMJ",
+"https://login.sharepoint.docviewer.org.es/SHARED_DOC_GSyAZpXr",
+"https://login.sharepoint.docviewer.org.es/SHARED_DOC_qGSBeyfO",
+"https://login.sharepoint.docviewer.org.es/SHARED_DOC_oaCsVnFC",
+"https://login.sharepoint.docviewer.org.es/SHARED_DOC_ELNazzil"
      ]
      }
 ]
