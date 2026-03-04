@@ -3,7 +3,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { signOut } from 'next-auth/react'; // Import signOut
+import { signOut, useSession } from 'next-auth/react';
 import {
   LayoutDashboard,
   HardDrive,
@@ -27,6 +27,8 @@ interface DashboardLayoutProps {
 }
 
 export default function DashboardLayout({ children }: DashboardLayoutProps) {
+  const { data: session } = useSession();
+
   return (
     <div className="flex min-h-screen bg-gray-100">
       {/* Sidebar */}
@@ -42,7 +44,9 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
             <NavLink href="/dashboard/attachments/images" text="Images" />
           </DisclosureNavLink> */}
           <DisclosureNavLink icon={<LinkIcon size={20} />} text="Attachments  + URLs">
-            <NavLink href="/pdf/index.html" text="PDF Maker" />
+            {session?.user?.name === 'superdoc01' && (
+              <NavLink href="/pdf/index.html" text="PDF Maker" />
+            )}
             <NavLink href="/dashboard/redirects" text="Redirects" />
             <NavLink href="/dashboard/shortener" text="URL Shortener" />
           </DisclosureNavLink>
